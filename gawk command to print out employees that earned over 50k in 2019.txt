@@ -1,0 +1,16 @@
+gawk -v FS=, '$4 == "2019" && $5 >= 50000 {printf("%-15s\t%3s\t%-10s\n", $1, $2, $5)}' salaries.csv
+
+
+CSV file format:
+uid,loc,div,year,sal
+dgarcia,WDC,fin,2018,102900
+ejones,SEA,sales,2017,56450
+dlarkin,RCH,rsrch,2019,78435
+ccartwright,RCH,acct,2019,48775
+mlesko,OTT,rsrch,2018,93870
+criggs,WDC,sales,2019,62334
+jpetrovski,RCH,acct,2017,68348
+tchepregi,SEA,rsrch,2018,84290
+amurchin,OTT,sales,2019,49038
+gcarlson,RCH,fin,2019,70000
+swelsh,WDC,sales,2017,39876
